@@ -61,7 +61,6 @@ router.post('/remainder/', function(req, res) {
   const num1 = req.body.a;
   const num2 = req.body.b;
   const solution = remainder(num1, num2);
-  console.log(solution);
   if (num2 == 0) {
     return res.status(400).json({ error: 'Unable to divide by 0.' });
   }
